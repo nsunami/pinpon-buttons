@@ -5,7 +5,13 @@
 }
 
 .background {
-  background-color: #1a1c37;
+  background-image: url("assets/noise.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-color: #1b1b1b;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -15,15 +21,22 @@
   gap: 20px;
 }
 
+.texture {
+  width: 100%;
+  height: 100%;
+}
+
 .button {
   border-radius: 100%;
   cursor: pointer;
   place-items: center;
   background-position: center;
-  background-size: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 200px;
   width: 200px;
   background-color: #1a1c37;
+  box-shadow: #000000 0px 0px 20px 0px;
   outline: none;
   border: none;
 }
@@ -33,9 +46,10 @@
 }
 
 .thumbs-up {
-  background-image: url("/thumbs-up.png");
+  background-image: url("assets/right.png");
 }
 
 .thumbs-down {
-  background-image: url("/thumbs-down.png");
+  background-image: url("assets/wrong.png");
+  background-position: top right;
 }
