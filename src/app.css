@@ -5,7 +5,13 @@
 }
 
 .background {
-  background-color: #1a1c37;
+  background-image: url("assets/noise.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-color: #1b1b1b;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -20,10 +26,12 @@
   cursor: pointer;
   place-items: center;
   background-position: center;
-  background-size: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 200px;
   width: 200px;
-  background-color: #1a1c37;
+  background-color: #222222;
+  box-shadow: #000000 0px 0px 20px 0px;
   outline: none;
   border: none;
 }
@@ -32,10 +40,27 @@
   transform: scale(0.9);
 }
 
-.thumbs-up {
-  background-image: url("/thumbs-up.png");
+.right {
+  background-image: url("assets/right.png");
 }
 
-.thumbs-down {
-  background-image: url("/thumbs-down.png");
+.wrong {
+  background-image: url("assets/wrong.png");
+  background-position: top right;
+}
+
+.complete {
+  background-image: url("assets/complete.png");
+  background-position: center;
+  filter: grayscale(100%) opacity(0.7);
+  height: 80px;
+  width: 80px;
+  border-radius: 30%;
+  align-self: flex-end;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.complete:hover,
+.complete:active {
+  filter: grayscale(0%);
 }
