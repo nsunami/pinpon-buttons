@@ -48,3 +48,19 @@
   background-image: url("assets/wrong.png");
   background-position: top right;
 }
+
+.complete {
+  background-image: url("assets/complete.png");
+  background-position: center;
+  filter: grayscale(100%) opacity(0.7);
+  height: 80px;
+  width: 80px;
+  border-radius: 30%;
+  align-self: flex-end;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.complete:hover,
+.complete:active {
+  filter: grayscale(0%);
+}
