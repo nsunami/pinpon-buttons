@@ -1,17 +1,23 @@
 <script lang="ts">
-
   let rightSound: HTMLAudioElement | null = null
   let wrongSound: HTMLAudioElement | null = null
   let completeSound: HTMLAudioElement | null = null
 
   const playRightSound = () => {
-    rightSound?.play()
+    playSound(rightSound)
   }
   const playWrongSound = () => {
-    wrongSound?.play()
+    playSound(wrongSound)
   }
   const playCompleteSound = () => {
-    completeSound?.play()
+    playSound(completeSound)
+  }
+
+  function playSound(sound: HTMLAudioElement | null) {
+    if (!sound) return
+    sound.pause()
+    sound.currentTime = 0
+    sound.play()
   }
 </script>
 
