@@ -5,9 +5,11 @@
   let completeSound: HTMLAudioElement | null = null
 
   const playRightSound = () => {
-    if (rightSound) return rightSound.play()
+    rightSound?.play()
   }
   const playWrongSound = () => {
+    wrongSound?.play()
+  }
   const playCompleteSound = () => {
     completeSound?.play()
   }
