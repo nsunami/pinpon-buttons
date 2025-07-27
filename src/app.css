@@ -40,11 +40,11 @@
   transform: scale(0.9);
 }
 
-.thumbs-up {
+.right {
   background-image: url("assets/right.png");
 }
 
-.thumbs-down {
+.wrong {
   background-image: url("assets/wrong.png");
   background-position: top right;
 }

@@ -20,14 +20,14 @@
     <!-- Button to trigger the sound effect -->
 
     <button
-      class="button thumbs-up"
+      class="button right"
       on:click={playRightSound}
-      aria-label="A thumbs-up button"
+      aria-label="A right meerkat button"
     ></button>
     <button
-      class="button thumbs-down"
+      class="button wrong"
       on:click={playWrongSound}
-      aria-label="A thumbs-down button"
+      aria-label="A wrong meerkat button"
     >
     </button>
   </div>
